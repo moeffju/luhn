@@ -6,7 +6,7 @@ Adds methods to Fixnum and String to generate and validate Luhn checksums.
 
 Add this line to your application's Gemfile:
 
-    gem 'luhn'
+    gem 'luhn', :git => 'git://github.com/moeffju/luhn.git'
 
 And then execute:
 
