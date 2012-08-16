@@ -20,7 +20,7 @@ The gem's name is 'luhn', so you need to `require luhn`.
 
 ## Usage
 
-`Fixnum`:
+`Numeric` (`Fixnum`, `Bignum`):
 
 ```
 4100410382.luhn?  #=> true

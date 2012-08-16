@@ -1,6 +1,6 @@
 require "luhn/version"
 
-class Fixnum
+class Numeric
   def luhn
     digits = self.to_s.chars.map(&:to_i)
     sum = digits.reverse.each_with_index.map{ |x, i| i.even? ? (x * 2).divmod(10).inject(:+) : x }.reverse.inject(:+)

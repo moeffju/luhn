@@ -1,7 +1,7 @@
 require_relative './spec_helper'
 
 describe "Luhn" do
-  describe "on Fixnums" do
+  describe "on Numeric" do
     let(:valid) { 4100410382 }
     let(:valid_check) { 2 }
     let(:incomplete) { 410041038 }
@@ -23,12 +23,12 @@ describe "Luhn" do
       incomplete.luhn!.should == valid
     end
 
-    it "should return Fixnums" do
-      incomplete.luhn!.should be_a Fixnum
+    it "should quack like a Numeric" do
+      incomplete.luhn!.should be_a Numeric
     end
   end
 
-  describe "on Strings" do
+  describe "on String" do
     let(:valid) { '4 10041038 2' }
     let(:valid_check) { '2' }
     let(:incomplete) { '410041038' }
