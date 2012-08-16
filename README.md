@@ -2,6 +2,8 @@
 
 Adds methods to Fixnum and String to generate and validate Luhn checksums.
 
+[![Build Status](https://secure.travis-ci.org/moeffju/luhn.png?branch=master)](http://travis-ci.org/moeffju/luhn)
+
 ## Installation
 
 Add this line to your application's Gemfile:
