@@ -6,13 +6,17 @@ Adds methods to Fixnum and String to generate and validate Luhn checksums.
 
 Add this line to your application's Gemfile:
 
-    gem 'luhn', :git => 'git://github.com/moeffju/luhn.git'
+    gem 'moeffju-luhn', :require => 'luhn'
 
 And then execute:
 
     $ bundle
 
-If you're not using bundler, you will have to build the gem from source.
+Or install it yourself as:
+
+    $ gem install moeffju-luhn
+
+The gem's name is 'luhn', so you need to `require luhn`.
 
 ## Usage
 
@@ -33,7 +37,7 @@ And for `String`s:
 ```
 '4 10041064 8'.luhn?  #=> true
 '4 10041064'.luhn     #=> "8"
-'4 10041064'.luhn!    #=> "4 100410648"
+'4 10041064'.luhn!    #=> "4100410648"
 ```
 
 ## Contributing
