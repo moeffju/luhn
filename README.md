@@ -12,9 +12,7 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install luhn
+If you're not using bundler, you will have to build the gem from source.
 
 ## Usage
 
