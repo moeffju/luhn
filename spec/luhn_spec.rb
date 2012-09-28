@@ -55,4 +55,7 @@ describe "Luhn" do
     end
   end
 
+  it "should return valid checksum (one digit)" do
+    123.luhn.should be 0
+  end
 end
